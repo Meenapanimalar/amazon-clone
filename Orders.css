@@ -1,0 +1,24 @@
+.orders {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.orders h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.orders__order {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.orders__order .order {
+  max-width: 600px;
+  margin: 0 auto;
+}

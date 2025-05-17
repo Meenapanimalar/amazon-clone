@@ -1,0 +1,78 @@
+/* General Product Styles */
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Info Section */
+.product__info {
+  margin-bottom: 16px;
+}
+
+.product__info p {
+  font-size: 0.9rem;
+  color: #111111;
+  line-height: 1.4;
+}
+
+.product__price {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #b12704; /* Amazon price color */
+}
+
+/* Product Rating */
+.product__rating {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.product__rating p {
+  margin: 0 2px;
+  color: #ff9900; /* Star color */
+}
+
+/* Product Image */
+.product img {
+  width: 200px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  object-fit: contain; /* Ensures image fits within bounds without distortion */
+  margin-bottom: 16px;
+  border-radius: 8px;
+  background-color: #f7f7f7; /* Light background for better contrast */
+  padding: 8px; /* Padding for images with transparent backgrounds */
+}
+
+/* Add to Cart Button */
+.product button {
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #111111;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #ddb347;
+}
